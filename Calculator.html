@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Calculator </title>
+    <style>
+        .main{
+    width: 85%;
+    height: 570px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+}
+.dis{
+    color: white;
+    border-color: transparent;
+    width: 100%;
+    grid-column: span 4;
+    grid-row: span 2;
+    border-radius: 6px;
+    margin-bottom: 7%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 6px;
+}
+.calculator{
+    width:20%;
+    height: 44%;
+    margin: auto;
+    padding: 4%;
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(4,1fr);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.numbers{
+    color:rgb(3, 3, 3);
+    text-align: center;
+    background-color: white;
+    font-weight:bold;
+    margin: 3%;
+    font-size: 20px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 6px;
+}
+.symbol{
+    color: white;
+    margin: 3%;
+    text-align: center;
+    background-color: black;
+    font-weight:bold;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 6px;
+}
+button{
+    border-color: transparent;
+    cursor: pointer;
+}
+body{
+    background-color: black;
+}
+h1{
+    color: rgb(15, 194, 194);
+    margin-bottom: 4%;
+    text-align: center;
+}
+.delete{
+    margin: 3%;
+    color: white;
+    font-weight:bold;
+    background-color: red;
+    box-shadow: rgba(5, 4, 0, 1.80) 0px 3px 6px;
+    border-radius: 6px;
+}
+
+    </style>
+</head>
+    <body>
+        <div class="main">
+            <h1>Masai Calculator</h1>
+            <div class="calculator">
+                <input class="dis"></input>
+                <button class="numbers">1</button>
+                <button class="numbers">2</button>
+                <button class="numbers">3</button>
+                <button class="symbol">+</button>
+                <button class="numbers">4</button>
+                <button class="numbers">5</button>
+                <button class="numbers">6</button>
+                <button class="symbol">-</button>
+                <button class="numbers">7</button>
+                <button class="numbers">8</button>
+                <button class="numbers">9</button>
+                <button class="symbol">x</button>
+                <button class="delete">C</button>
+                <button class="numbers">0</button>
+                <button class="symbol">=</button>
+                <button class="symbol">/</button>
+            </div>
+        </div>
+    </body>
+</html>
