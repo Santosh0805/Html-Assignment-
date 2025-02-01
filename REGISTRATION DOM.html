@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form </title>
+</head>
+<body>
+    <input type="text" name="name" class="name">
+    <select class="gender">
+        <option value="">--</option>
+        <option value="male">male</option>
+        <option value="female">female</option>
+    </select>
+    <input type="text" name="email" class="email">
+    <input type="text" name="mobile" class="mobile">
+    <hr>
+    <h1 class="Name">NAME :</h1>
+    <h1 class="Gender">GENDER :</h1>
+    <h1 class="Email">EMAIL :</h1>
+    <h1 class="Mobile">MOBILE :</h1>
+    <hr>
+    <button onclick="showName()">NAME</button>
+    <button onclick="showGender()">GENDER</button>
+    <button onclick="showEmail()">EMAIL</button>
+    <button onclick="showMobile()">MOBILE</button>
+    <button onclick="resetForm()">RESET FORM</button>
+    <button onclick="resetDisplay()">RESET DISPLAY</button>
+    <script type="text/javascript">
+        function showName() {
+            let name = document.querySelector('.name').value;
+            document.querySelector('.Name').textContent = `NAME :- ${name}`;
+        }
+        function showGender() {
+            let gender = document.querySelector('.gender').value;
+            document.querySelector('.Gender').textContent = `GENDER :- ${gender}`;
+        }
+        function showEmail() {
+            let email = document.querySelector('.email').value;
+            document.querySelector('.Email').textContent = `EMAIL :- ${email}`;
+        }
+        function showMobile() {
+            let mobile = document.querySelector('.mobile').value;
+            document.querySelector('.Mobile').textContent = `MOBILE :- ${mobile}`;
+        }
+        function resetForm() {
+            document.querySelector('.name').value = '';
+            document.querySelector('.gender').selectedIndex = 0;
+            document.querySelector('.email').value = '';
+            document.querySelector('.mobile').value = '';
+        }
+        function resetDisplay() {
+            document.querySelector('.Name').textContent = '';
+            document.querySelector('.Gender').textContent = '';
+            document.querySelector('.Email').textContent = '';
+            document.querySelector('.Mobile').textContent = '';
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+<h1>Masai School Application</h1>
+    <p>Enter Your name and gender to apply for masai school</p>
+    <h2 class="display">Display Entered Name and Gender Here</h2>
+    <hr>
+    <div>
+        <input type="text"
+               class="name"
+               placeholder="Enter your name">
+        <select class="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <button> Click to Submit </button>
+    </div>
+</body>
+
+</html>
+<script>
+    let input = document.querySelector(".name");
+    let apply = document.querySelector("button");
+    let heading2 = document.querySelector(".display");
+    let gender = document.querySelector(".gender");
+
+    apply.addEventListener("click", function () {
+        heading2.innerText = input.value + " " + gender.value;
+        console.log(heading2.innerText);
+
+    })
+</script> 
